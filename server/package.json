@@ -1,0 +1,17 @@
+{
+  "name": "vjti-energy-server",
+  "version": "1.0.0",
+  "description": "VJTI Smart Energy System Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": [],
+  "author": "VJTI Capstone 2025-26",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

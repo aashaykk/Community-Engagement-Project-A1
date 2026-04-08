@@ -1,0 +1,270 @@
+[
+    {
+        "room": "AL001",
+        "name": "router",
+        "powerW": 10,
+        "quantity": 1,
+        "usageHours": 24
+    },
+    {
+        "room": "AL001",
+        "name": "CCTV",
+        "powerW": 15,
+        "quantity": 1,
+        "usageHours": 24
+    },
+    {
+        "room": "AL001",
+        "name": "AC",
+        "powerW": 1500,
+        "quantity": 4,
+        "usageHours": 8
+    },
+    {
+        "room": "AL001",
+        "name": "Pa mixer amplifier",
+        "powerW": 200,
+        "quantity": 1,
+        "usageHours": 8
+    },
+    {
+        "room": "AL001",
+        "name": "socket",
+        "powerW": 50,
+        "quantity": 38,
+        "usageHours": 8
+    },
+    {
+        "room": "AL001",
+        "name": "tubelight(circular)",
+        "powerW": 20,
+        "quantity": 20,
+        "usageHours": 8
+    },
+    {
+        "room": "AL001",
+        "name": "fan",
+        "powerW": 75,
+        "quantity": 8,
+        "usageHours": 8
+    },
+    {
+        "room": "AL001",
+        "name": "digital board",
+        "powerW": 150,
+        "quantity": 1,
+        "usageHours": 8
+    },
+
+    {
+        "room": "Staff Room (near 201)",
+        "name": "fan",
+        "powerW": 75,
+        "quantity": 2,
+        "usageHours": 8
+    },
+    {
+        "room": "Staff Room (near 201)",
+        "name": "tubelight",
+        "powerW": 20,
+        "quantity": 2,
+        "usageHours": 8
+    },
+    {
+        "room": "Staff Room (near 201)",
+        "name": "socket",
+        "powerW": 50,
+        "quantity": 17,
+        "usageHours": 8
+    },
+    {
+        "room": "Staff Room (near 201)",
+        "name": "CCTV",
+        "powerW": 15,
+        "quantity": 1,
+        "usageHours": 24
+    },
+    {
+        "room": "Lab 2",
+        "name": "fan",
+        "powerW": 75,
+        "quantity": 7,
+        "usageHours": 8
+    },
+    {
+        "room": "Lab 2",
+        "name": "CCTV",
+        "powerW": 15,
+        "quantity": 2,
+        "usageHours": 24
+    },
+    {
+        "room": "Lab 2",
+        "name": "PC",
+        "powerW": 200,
+        "quantity": 60,
+        "usageHours": 8
+    },
+    {
+        "room": "Lab 2",
+        "name": "tubelight",
+        "powerW": 20,
+        "quantity": 11,
+        "usageHours": 8
+    },
+    {
+        "room": "Lab 2",
+        "name": "socket",
+        "powerW": 50,
+        "quantity": 120,
+        "usageHours": 8
+    },
+    {
+        "room": "Lab 2",
+        "name": "digital board",
+        "powerW": 150,
+        "quantity": 1,
+        "usageHours": 8
+    },
+    {
+        "room": "Lab 2",
+        "name": "server",
+        "powerW": 400,
+        "quantity": 1,
+        "usageHours": 24
+    },
+    {
+        "room": "Lab 2",
+        "name": "AC",
+        "powerW": 1500,
+        "quantity": 4,
+        "usageHours": 8
+    },
+    {
+        "room": "AL207",
+        "name": "projector",
+        "powerW": 250,
+        "quantity": 1,
+        "usageHours": 8
+    },
+    {
+        "room": "AL207",
+        "name": "CCTV",
+        "powerW": 15,
+        "quantity": 1,
+        "usageHours": 24
+    },
+    {
+        "room": "AL207",
+        "name": "tubelight",
+        "powerW": 20,
+        "quantity": 7,
+        "usageHours": 8
+    },
+    {
+        "room": "AL207",
+        "name": "socket",
+        "powerW": 50,
+        "quantity": 4,
+        "usageHours": 8
+    },
+    {
+        "room": "AL207",
+        "name": "AC",
+        "powerW": 1500,
+        "quantity": 3,
+        "usageHours": 8
+    },
+
+    {
+        "room": "AL207",
+        "name": "fan",
+        "powerW": 75,
+        "quantity": 5,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "CCTV",
+        "powerW": 15,
+        "quantity": 1,
+        "usageHours": 24
+    },
+    {
+        "room": "AL201",
+        "name": "AC",
+        "powerW": 1500,
+        "quantity": 3,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "socket",
+        "powerW": 50,
+        "quantity": 8,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "tubelight",
+        "powerW": 20,
+        "quantity": 6,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "fan",
+        "powerW": 75,
+        "quantity": 5,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "projector",
+        "powerW": 250,
+        "quantity": 1,
+        "usageHours": 8
+    },
+    {
+        "room": "AL202",
+        "name": "fan",
+        "powerW": 75,
+        "quantity": 6,
+        "usageHours": 8
+    },
+    {
+        "room": "AL202",
+        "name": "tubelight",
+        "powerW": 20,
+        "quantity": 6,
+        "usageHours": 8
+    },
+    {
+        "room": "AL202",
+        "name": "socket",
+        "powerW": 50,
+        "quantity": 5,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "projector",
+        "powerW": 250,
+        "quantity": 1,
+        "usageHours": 8
+    },
+    {
+        "room": "AL202",
+        "name": "AC",
+        "powerW": 1500,
+        "quantity": 3,
+        "usageHours": 8
+    },
+    {
+        "room": "AL201",
+        "name": "CCTV",
+        "powerW": 15,
+        "quantity": 1,
+        "usageHours": 24
+    }
+]
