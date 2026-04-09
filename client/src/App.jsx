@@ -8,6 +8,7 @@ import StudentDashboard from './pages/StudentDashboard';
 import ProposalViewer from './components/ProposalViewer';
 import AuditTrail from './components/AuditTrail';
 import api from './api';
+import SimulationSandbox from './pages/SimulationSandbox';
 import './App.css';
 
 // A mock simple layout wrapper
@@ -133,14 +134,7 @@ function App() {
 
         <Route path="/simulation" element={
           <ProtectedRoute>
-            <div className="animate-fade-in-up">
-              <h2 className="mb-4">Renewable Sandbox Simulator</h2>
-              <div className="card text-center" style={{ padding: '4rem 2rem' }}>
-                 <h3 className="text-secondary mb-2">Simulation Engine Initialization</h3>
-                 <p className="text-muted">Dial in parameters for solar modeling mapped onto current campus load.</p>
-                 <button className="btn btn-primary mt-4">Run Simulation Sequence</button>
-              </div>
-            </div>
+            <SimulationSandbox />
           </ProtectedRoute>
         } />
 

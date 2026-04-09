@@ -81,7 +81,10 @@ async function computeRoomConsumption(roomId, month, year) {
   }
 
   const tariff = dept?.tariffPerUnit || 7.5;
-  const totalCost = +(totalKWh * tariff).toFixed(2);
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const solarGenKWh = (room.installedSolarKW || 0) * 4 * daysInMonth; 
+  const netKWh = Math.max(0, totalKWh - solarGenKWh);
+  const totalCost = +(netKWh * tariff).toFixed(2);
 
   // Per-appliance breakdown
   const applianceBreakdown = appliances.map(ra => {
@@ -98,7 +101,11 @@ async function computeRoomConsumption(roomId, month, year) {
   return {
     roomId, roomName: room.name, month, year,
     tariff,
-    totalKWh: +totalKWh.toFixed(3), totalCost,
+    installedSolarKW: room.installedSolarKW || 0,
+    solarGenKWh: +solarGenKWh.toFixed(2),
+    grossKWh: +totalKWh.toFixed(3),
+    totalKWh: +netKWh.toFixed(3),
+    totalCost,
     workingDays: lectureDays + phantomDays, lectureDays, phantomDays, offDays,
     dailyData, applianceBreakdown
   };

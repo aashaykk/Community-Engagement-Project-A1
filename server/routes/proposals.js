@@ -3,6 +3,7 @@ const Proposal = require('../models/Proposal');
 const Notification = require('../models/Notification');
 const AuditLog = require('../models/AuditLog');
 const User = require('../models/User');
+const Room = require('../models/Room');
 const { protect, authorize } = require('../middleware/auth');
 const { sendEmail } = require('../services/emailService');
 
@@ -56,6 +57,15 @@ router.put('/:id/review', protect, authorize('admin'), async (req, res) => {
   proposal.reviewedAt = new Date();
   if (comment) proposal.comments.push({ author: req.user._id, text: comment });
   await proposal.save();
+
+  // Apply diff to live database if approved
+  if (status === 'approved' && proposal.diff && proposal.diff.next) {
+    if (proposal.diff.next.installedSolarKW !== undefined) {
+      await Room.findByIdAndUpdate(proposal.roomId, {
+        installedSolarKW: proposal.diff.next.installedSolarKW
+      });
+    }
+  }
 
   // Notify HOD
   await Notification.create({ userId: proposal.proposedBy._id, message: `Your proposal was ${status} by ${req.user.name}`, type: status === 'approved' ? 'info' : 'warning', relatedId: proposal._id, relatedModel: 'Proposal' });
